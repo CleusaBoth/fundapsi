@@ -25,11 +25,11 @@
 # Primeiro, definimos os 'níveis' de nosso 'fator';
 # ou seja, definimos os valores possíveis de nossa variável independente (que é categorial):
 
-# cursos <- c('Administração', 'Agronomia', 'Ciências Biológicas',
-#             'Engenharia Ambiental', 'Física', 'Letras', 'Química')
+cursos <- c('Administração', 'Agronomia', 'Ciências Biológicas',
+             'Engenharia Ambiental', 'Física', 'Letras', 'Química')
 
 # Dados para teste.
-locais <- c('OregonT', 'OregonN', 'Alaska', 'Russia', 'Finland')
+#locais <- c('OregonT', 'OregonN', 'Alaska', 'Russia', 'Finland')
 
 # Em seguida, definimos os valores para cada respondente do questionário.
 # Usar o seguinte código:
@@ -51,7 +51,7 @@ xDummy <- c(1, 6, 5, 4, 5, 6, 5, 1, 5, 5, 5, 5, 1, 3, 1,
 #x <- factor(xDummy, labels=cursos)
 
 # Dados para teste
-x <- factor(xDummy, labels=locais)
+x <- factor(xDummy, labels=cursos)
 
 # Depois, definimos os valores da variável dependente.
 # A escala pode variar e deve ser definida pelo grupo.
@@ -59,10 +59,10 @@ x <- factor(xDummy, labels=locais)
 #y <- c(0.0, 6.5, 10.0, 5.0, 3.3, 4.7) # Preencher com a nota calculada para cada respondente, em ordem.
 
 # Dados para teste
-y <- c(9.0, 5.0, 10.0, 6.0, 10.0, 4.0, 10.0, 4,0, 10.0,
-       6.0, 8.0, 8.0, 9.0, 7.0, 5.0, 7.0, 5.0, 5.0, 4.0,
-       1.0, 6.0, 8.0, 5.0, 7.0, 9.0, 5.0, 6.0, 6.0, 6.0,
-       10,0)
+y <- c(9.0, 5.0, 10.0, 6.0, 10.0, 5.0, 10.0, 3.0, 9.0,
+       7.0, 8.0, 9.0, 7.0, 5.0, 7.0, 9.0, 8.0, 7.0, 5.0,
+       1.0, 5.0, 8.0, 5.0, 5.0, 9.0, 6.0, 6.0, 8.0, 5.0,
+       9.0)
 
 # Agora juntamos nossos dados num data frame para facilitar as análises.
 
